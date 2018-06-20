@@ -19,7 +19,8 @@ import com.google.common.base.Preconditions;
  * @author Jason Song(song_s@ctrip.com)
  */
 public enum Env{
-	LOCAL, DEV, FWS, FAT, UAT, LPT, PRO, TOOLS, T1, T2, T6, T8, T9, T10, SANDBOX;
+//	LOCAL, DEV, FWS, FAT, UAT, LPT, PRO, TOOLS, T1, T2, T6, T8, T9, T10, SANDBOX;
+	DEV, T8;
   public static Env fromString(String env) {
     Env environment = EnvUtils.transformEnv(env);
     Preconditions.checkArgument(environment != null, String.format("Env %s is invalid", env));

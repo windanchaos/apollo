@@ -9,8 +9,10 @@ public class MetaDomainTest {
 
   @Test
   public void testGetMetaDomain() {
-    Assert.assertEquals("http://localhost:8080", MetaDomainConsts.getDomain(Env.LOCAL));
-    Assert.assertEquals("http://dev:8080", MetaDomainConsts.getDomain(Env.DEV));
-    Assert.assertEquals(MetaDomainConsts.DEFAULT_META_URL, MetaDomainConsts.getDomain(Env.PRO));
+//    Assert.assertEquals("http://localhost:8080", MetaDomainConsts.getDomain(Env.LOCAL));
+//    Assert.assertEquals("http://dev:8080", MetaDomainConsts.getDomain(Env.DEV));
+      Assert.assertEquals("http://10.188.56.63:8080", MetaDomainConsts.getDomain(Env.DEV));
+      Assert.assertEquals("http://10.188.56.187:8080", MetaDomainConsts.getDomain(Env.T8));
+   // Assert.assertEquals(MetaDomainConsts.DEFAULT_META_URL, MetaDomainConsts.getDomain(Env.PRO));
   }
 }
